@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <meta name="keyword" content="smart phone,tablets,computers">
+        <title>MARTHASHMOONI ORTHODOX VELLIYAPALLY</title>
+        <link rel="stylesheet" href="style.css">
+
+
+    </head>
+<body>
+<h1>ST.GREGOURIOS YOUTH MOVEMENT</h1>
+
+
+<h1>MARTHASHMOONI ORTHODOX VELLIYAPALLY DIRECTORY</h1>
+    <div class="preview">
+    <img src="" alt="" id="file-ip-1-preview">
+    </div>
+    <label for="file-ip-1">upload image</label>
+    <input type="file" id="file-ip-1"accept="images*"onchange="showpreview(event);">
+     
+
+
+</div>
+<script type="text/javascript">
+    function showpreview(event) {
+        if(event.target.files.length > 0){
+            var src = URL.createObjectURL(event.target.files[0]);
+            var preview = document.getElementByld("file-ip-1-preview");
+            preview.src = src;
+            preview.style.display = "block";
+        }
+    }
+    
+    const file = this.Files[0];
+
+    if (file) {
+        const reader = new FileReader();
+
+        previewdefaulttext.style.display = "none";
+        previewimage.style.display = "block";
+ 
+        reader.addEventListner("load", function() {
+            console.log(this);
+            previewimage.setAttribute("src", this.result);
+                
+            });
+            reader.readAsDataURL(file);
+        }else{
+            previewdefaulttext.style.display = "null";
+            previewimage.style.display = "null";
+            previewimage.setAttribute("src","");
+
+
+        }
+
+
+</script>
+
+<br>
+<label for="fname">HOUSE OWNER NAME:</label>
+<input type="text" NAME="frame" id="fname">
+<br>
+<label for=" frame">ADDRESS:</label>
+<input type="text" NAME="sname" id="sname">
+<br>
+<label for="phone">PHONE:</label>
+<input type=" phone" PHONE="frame" id="fname">
+<br>
+<label for=" house">HOUSE NUMBER:</label>
+<input type="house number"name="pass" id="pass">
+<BR>
+
+<label for=" PRAYER">PRAYER GROUP:</label>
+<input type="PRAYER"name="pass" id="PRAYER">
+
+
+    <h3>FAMILY DETAILS</h3> 
+   <table style="width:  100;"
+           border="1.5">
+       
+<tr>
+     <th>SN</th>
+     <th>FAMILY MEMBERS NAME</th>
+     <th>DATE OF BIRTH</th>
+     <th>RELATION</th>
+     <th>BLOOD GROUP</th>
+</tr>
+<tr>
+<td>1</td>
+<th><input type="text" name="fname"></th>
+     <th><input type="text" name="fname"></th>
+     <th><input type="text" name="fname"></th>
+     <th><input type="text" name="fname"></th>
+</tr>
+
+<tr>
+    <td>2</td>
+    <th><input type="text" name="fname"></th>
+    <th><input type="text" name="fname"></th>
+    <th><input type="text" name="fname"></th>
+    <th><input type="text" name="fname"></th>
+    <tr>
+        <td>3</td>
+        <th><input type="text" name="fname"></th>
+        <th><input type="text" name="fname"></th>
+        <th><input type="text" name="fname"></th>
+        <th><input type="text" name="fname"></th>
+        <tr>
+            <td>4</td>
+            <th><input type="text" name="fname"></th>
+            <th><input type="text" name="fname"></th>
+            <th><input type="text" name="fname"></th>
+            <th><input type="text" name="fname"></th>
+            <tr>
+                <td>5</td>
+                <th><input type="text" name="fname"></th>
+                <th><input type="text" name="fname"></th>
+                <th><input type="text" name="fname"></th>
+                <th><input type="text" name="fname"></th>
+                <tr>
+                    <td>6</td>
+                    <th><input type="text" name="fname"></th>
+                    <th><input type="text" name="fname"></th>
+                    <th><input type="text" name="fname"></th>
+                    <th><input type="text" name="fname"></th>
+
+                    <tr>
+                        <td>7</td>
+                        <th><input type="text" name="fname"></th>
+                        <th><input type="text" name="fname"></th>
+                        <th><input type="text" name="fname"></th>
+                        <th><input type="text" name="fname"></th>
+                        <tr>
+                            <td>8</td>
+                            <th><input type="text" name="fname"></th>
+     <th><input type="text" name="fname"></th>
+     <th><input type="text" name="fname"></th>
+     <th><input type="text" name="fname"></th>
+                            <tr>
+                                <td>9</td>
+                                <th><input type="text" name="fname"></th>
+     <th><input type="text" name="fname"></th>
+     <th><input type="text" name="fname"></th>
+     <th><input type="text" name="fname"></th>
+                                <tr>
+                                    <td>10</td>
+                                    <th><input type="text" name="fname"></th>
+     <th><input type="text" name="fname"></th>
+     <th><input type="text" name="fname"></th>
+     <th><input type="text" name="fname"></th>
+
+</table>
+<br>
+<div>
+    <input type="submit" value="submit"/>
+</div>
+<script type="text/javascript">
+    function myfunc(event) {
+        event.preventdefault();
+localStorage.setItem('is_HOUSE_OWNER_NAME',HOUSEOWNERNAME);
+localStorage.setItem('is_ADDRESS',ADDRESS);
+localStorage.setItem('is_PHONE',PHONE);
+localStorage.setItem('is_HOUSE_NUMBER',HOUSENUMBER);
+localStorage.setItem('is_PRAYER GROUP',PRAYERGROUP);
+localStorage.setItem('is_FAMILY_MEMBERS_NAME',FAMILY);
+localStorage.setItem('is_DATE_OF_BIRTH',DATEOFBIRTH);
+localStorage.setItem('is_RELATION',RELATION);
+localStorage.setItem('is_BLOOD_GROUP',BLOODGROUP);
+    }
+
+
+</script>
+
+</div>
+</body>
+</html>
